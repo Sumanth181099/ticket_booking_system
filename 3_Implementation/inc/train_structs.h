@@ -21,4 +21,5 @@ struct booking{
 	int id;
 	int train_id;
 	int seats;
+	float cost;
 };
