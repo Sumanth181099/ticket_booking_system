@@ -41,14 +41,14 @@ The system is pretty straightforward in terms of usage. Looking at the definitio
 
 | ID | Description | Status |
 | :---:   | :-: | :-: |
-| H1 |Train Seat booking system for customers| Yet to be implemented|
-| H2 |Database of the customers for companies| Yet to be implemented|
+| H1 |Train Seat booking system for customers| Implemented |
+| H2 |Database of the customers for companies| Implemented |
 
 
 ##  Low level Requirements:
 
 | ID | Description | Status |
 | :---:   | :-: | :-: |
-| L1 | Updation of the train schedule by administrator| Yet to be implemented|
-| L2 | Search for a train and book a ticket in a train| Yet to be implemented|
-| L3 | Display the customers database who have booked tickets| Yet to be implemented|
+| L1 | Updation of the train schedule by administrator| Implemented |
+| L2 | Search for a train and book a ticket in a train| Implemented |
+| L3 | Display the customers database who have booked tickets| Implemented |
