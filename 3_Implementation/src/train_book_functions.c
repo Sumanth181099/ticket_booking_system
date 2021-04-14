@@ -97,10 +97,10 @@ void disp_cust_details(struct person *p1, struct booking *p2, int n)
 void cust_details_entry(struct person *p1, int nperson)
 {
 	printf("Name:");
-	scanf("%s",(ptr2 + nperson)->name);
+	scanf("%s",(p1 + nperson)->name);
 	printf("Phone Number:");
-	scanf("%s",(ptr2 + nperson)->phone);
-	(ptr2 + nperson)->id = nperson;
+	scanf("%s",(p1 + nperson)->phone);
+	(p1 + nperson)->id = nperson;
 }
 float total_cost(int num_seats, float cost)
 {
