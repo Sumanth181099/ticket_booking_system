@@ -14,7 +14,7 @@ struct person{
 	char name[25];
 	char phone[15];
 	int id;
-	float cost;
+	//float cost;
 };
 
 struct booking{
