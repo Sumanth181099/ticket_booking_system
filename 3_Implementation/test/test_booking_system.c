@@ -1,8 +1,8 @@
 #include "unity.h"
-#include <train_details.h>
+#include <train_struct.h>
 
 /* Modify these two lines according to the project */
-#include <train_details.h>
+#include <train_struct.h>
 #define PROJECT_NAME    "ticket_booking_system"
 
 /* Prototypes for all the test functions */
