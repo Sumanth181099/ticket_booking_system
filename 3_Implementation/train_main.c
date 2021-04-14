@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-#include"train_details.h"
+#include"train_struct.h"
 
 void update_train_schedule(struct train *, int );
 void disp_train(struct train *, int );
