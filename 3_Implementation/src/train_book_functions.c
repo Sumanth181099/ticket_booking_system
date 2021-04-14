@@ -1,4 +1,4 @@
-#include "train_struct.h"
+#include "train_structs.h"
 
 void update_train_schedule(struct train *p, int num_reserve)
 {
