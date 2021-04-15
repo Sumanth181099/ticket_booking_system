@@ -9,7 +9,8 @@ SRC = train_main.c\
 src/train_book_functions.c
 
 # All test source files
-TEST_SRC = test/test_booking_system.c\
+TEST_SRC = src/train_book_functions.c\
+test/test_booking_system.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
