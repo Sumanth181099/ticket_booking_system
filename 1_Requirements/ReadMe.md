@@ -52,3 +52,4 @@ The system is pretty straightforward in terms of usage. Looking at the definitio
 | L1 | Updation of the train schedule by administrator| Implemented |
 | L2 | Search for a train and book a ticket in a train| Implemented |
 | L3 | Display the customers database who have booked tickets| Implemented |
+| L4 | Cancellation of booked tickets | Future Scope |
