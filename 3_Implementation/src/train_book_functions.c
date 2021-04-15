@@ -9,7 +9,7 @@ void update_train_schedule(struct train *p, int num_reserve)
 	printf("Destination:");
 	scanf("%s",(p + num_reserve)->to);
 	printf("Cost:");
-	scanf("%d",&(p + num_reserve)->cost);
+	scanf("%f",&(p + num_reserve)->cost);
 	(p + num_reserve)->train_id =num_reserve;
 	(p + num_reserve)->seats =200; //assumed that total number of seats in a train is 200
 }
@@ -22,7 +22,7 @@ void disp_train(struct train *p, int n)
 		printf("Train Name: %s\n",(p+i)->name);	
 		printf("From: %s\n",(p+i)->from);
 		printf("Destination: %s\n",(p+i)->to);
-		printf("Cost: Rs %d\n",(p+i)->cost);
+		printf("Cost: Rs %f\n",(p+i)->cost);
 		printf("-------------------------------------------------\n");
 	}	
 }
@@ -37,7 +37,10 @@ void disp_cust(struct person *p, int n)
 		printf("-------------------------------------------------\n");
 	}	
 }
-									
+float total_cost(int num_seats, float cost)
+{
+	return (num_seats*cost);
+}									
 void reservation(struct train *p1, struct person *p2, struct booking *p3, int id, int count)
 {
 	int trainid,train_seat;
@@ -59,7 +62,7 @@ void reservation(struct train *p1, struct person *p2, struct booking *p3, int id
 		{
 			printf("Seats Booked!\n");
 			(p3 + id)->seats = train_seat;
-			printf("Total Amount to be paid: %d\n",value);
+			printf("Total Amount to be paid: %f\n",value);
 		}
 		else
 		{
@@ -79,7 +82,7 @@ void disp_train_details(struct train *p1, int n)
 	printf("Train Name: %s\n",(p1+n)->name);
 	printf("From: %s\n",(p1+n)->from);
 	printf("Destination: %s\n",(p1+n)->to);	
-	printf("Cost: Rs %d\n",(p1+n)->cost);
+	printf("Cost: Rs %f\n",(p1+n)->cost);
 	printf("Seats: %d\n",(p1+n)->seats);
 	printf("-------------------------------------------------\n");	
 }					
@@ -102,7 +105,4 @@ void cust_details_entry(struct person *p1, int nperson)
 	scanf("%s",(p1 + nperson)->phone);
 	(p1 + nperson)->id = nperson;
 }
-float total_cost(int num_seats, float cost)
-{
-	return (num_seats*cost);
-}
+
