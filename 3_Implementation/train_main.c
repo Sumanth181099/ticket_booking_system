@@ -21,7 +21,7 @@ int main()
 	char actual_pass[20] = "Admin@123"; //Password
 	int a = 0,b = 0;
 	
-	while(x!=6)
+	while(x!=5)
 	{
 		int choice;
 		printf("                Train Reservation Seats Booking System\n");
@@ -30,7 +30,6 @@ int main()
 		printf("               2- Check Reservations made (Admin):          \n");
 		printf("               3- Book tickets:                              \n");
 		printf("               4- Check Train Schedule:                             \n");
-		printf("               5- Customer List:                                    \n");
 		printf("               6- Exit system:                                    \n");
 		printf(" ------------------------------------------------------------------ \n");
 		printf("  Choose a suitable option of your choice: ");
@@ -155,11 +154,7 @@ int main()
 				disp_train(ptr1, num_reserve);			
 				break;
 			case 5:
-				disp_cust(ptr2, nperson);
-				printf("        Customers List        \n");			
-				break;
-			case 6:
-				x=6;
+				x=5;
 				break;
 			default: 
 				printf("Incorret Entry\n");
