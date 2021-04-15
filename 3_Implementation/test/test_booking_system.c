@@ -53,7 +53,7 @@ void test_reservation(void) {
 void test_disp_train_details(void) {
 
 }
-void test_disp_cust_details_entry(void) {
+void test_cust_details_entry(void) {
   
 }
 void test_total_cost(void) {
