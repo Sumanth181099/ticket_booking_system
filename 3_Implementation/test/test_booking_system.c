@@ -57,5 +57,5 @@ void test_cust_details_entry(void) {
   
 }
 void test_total_cost(void) {
-  TEST_ASSERT_EQUAL(100, total_cost(2, 50));
+  TEST_ASSERT_EQUAL(0, total_cost(0, 1000));
 }
