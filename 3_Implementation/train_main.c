@@ -30,7 +30,7 @@ int main()
 		printf("               2- Check Reservations made (Admin):          \n");
 		printf("               3- Book tickets:                              \n");
 		printf("               4- Check Train Schedule:                             \n");
-		printf("               6- Exit system:                                    \n");
+		printf("               5- Exit system:                                    \n");
 		printf(" ------------------------------------------------------------------ \n");
 		printf("  Choose a suitable option of your choice: ");
 		scanf("%d",&choice);
