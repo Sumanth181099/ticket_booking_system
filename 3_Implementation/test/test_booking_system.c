@@ -29,7 +29,7 @@ int main()
   RUN_TEST(test_reservation);
   RUN_TEST(test_disp_train_details);
   RUN_TEST(test_cust_details_entry);
-  RUN_ENTRY(test_total_cost);
+  RUN_TEST(test_total_cost);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
