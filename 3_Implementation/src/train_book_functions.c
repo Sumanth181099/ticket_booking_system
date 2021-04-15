@@ -50,19 +50,20 @@ void reservation(struct train *p1, struct person *p2, struct booking *p3, int id
 	printf("Enter the train ID of your choice:");
 	scanf("%d",&trainid);
 	(p3 + id)->train_id = trainid;
-	price = (p3+trainid)->cost;
+	price = (p1+trainid)->cost;
 	if((p1 + trainid)->seats >= 0)
 	{
 		printf("Seats available: %d\n",(p1 + trainid)->seats);
 		printf("Enter required no. of seats: ");
 		scanf("%d",&train_seat);
 		(p1+trainid)->seats = (p1+trainid)->seats - train_seat;
-		value = total_cost(train_seat, price);
 		if((p1 + trainid)->seats >= 0)
 		{
 			printf("Seats Booked!\n");
 			(p3 + id)->seats = train_seat;
-			printf("Total Amount to be paid: %f\n",value);
+			value = total_cost(train_seat, price);
+			(p2+id)->cost = value;
+			printf("Total Amount to be paid: %f\n",(p2+id)->cost);
 		}
 		else
 		{
